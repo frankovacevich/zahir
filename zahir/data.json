@@ -1,0 +1,241 @@
+{
+    "sources": [
+        {
+            "id": 1,
+            "name": "Machine 1",
+            "description": "Machine 1",
+            "type": "MQTT",
+            "variables": [
+                {
+                    "id": 1,
+                    "name": "Temperature 1",
+                    "description": "Temperature of the machine in Celsius",
+                    "default_value": 12.5
+                },
+                {
+                    "id": 2,
+                    "name": "Pressure 1",
+                    "description": "Pressure of the machine (qualitative)",
+                    "default_value": 5
+                },
+                {
+                    "id": 3,
+                    "name": "Status 1",
+                    "description": "Machine running status (on = true, off = false)",
+                    "default_value": 1
+                }
+            ],
+            "events": []
+        },
+        {
+            "id": 2,
+            "name": "Machine 2",
+            "description": "Machine 2",
+            "type": "MQTT",
+            "variables": [
+                {
+                    "id": 4,
+                    "name": "Temperature 2",
+                    "description": "Temperature of the machine in Celsius",
+                    "default_value": 22.5
+                },
+                {
+                    "id": 5,
+                    "name": "Pressure 2",
+                    "description": "Pressure of the machine (qualitative)",
+                    "default_value": 1
+                },
+                {
+                    "id": 6,
+                    "name": "Status 2",
+                    "description": "Machine running status (on = true, off = false)",
+                    "default_value": 13
+                }
+            ],
+            "events": []
+        },
+        {
+            "id": 3,
+            "name": "Shift registry",
+            "description": "What workers are on shift",
+            "type": "MQTT",
+            "variables": [
+                {
+                    "id": 7,
+                    "name": "Worker",
+                    "description": "Worker name",
+                    "default_value": "Bob"
+                }
+            ],
+            "events": []
+        },
+        {
+            "id": 4,
+            "name": "New Source",
+            "description": "",
+            "type": "MQTT",
+            "variables": null,
+            "events": null
+        }
+    ],
+    "sequences": [
+        {
+            "id": 1,
+            "name": "Normal",
+            "description": "Normal sequence (Machines 1 and 2)",
+            "length": 120,
+            "source_ids": [
+                1,
+                2
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Cleaning",
+            "description": "Cleaning of all machines",
+            "length": 120,
+            "source_ids": [
+                1,
+                2
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Start-up",
+            "description": "Start up of all machines",
+            "length": 120,
+            "source_ids": [
+                1,
+                2
+            ]
+        }
+    ],
+    "variable_values": [
+        {
+            "variable_id": 1,
+            "sequence_id": 1,
+            "values": [
+                12.5,
+                12.5,
+                12.5,
+                12.5,
+                12.5,
+                12.5,
+                12.5,
+                12.5,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                13,
+                14,
+                14,
+                14,
+                14,
+                16,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12,
+                12
+            ]
+        }
+    ]
+}
